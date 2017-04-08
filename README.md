@@ -44,7 +44,7 @@ module.exports改为挂接在window变量上，然后把lib文件夹下其余的
 
 打开浏览器的控制台界面，控制台是主要的信息输出地。分别注册和登录。
 
-![登录界面]（https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/login.PNG）
+![登录界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/login.PNG)
 
 ![登录界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/afterlogin.PNG)
 
