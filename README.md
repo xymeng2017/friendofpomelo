@@ -44,7 +44,7 @@ module.exports改为挂接在window变量上，然后把lib文件夹下其余的
 
 ### 5. game-server去除了对bearcat.js的依赖
 
-在ES6+面前，bearcat比较鸡肋，bearcat的unc参数带来了函数式编程的恐怖回忆；type参数对于弱类型语言，一个object不足以描述其类型。
+在ES6+面前，bearcat比较鸡肋，bearcat的func参数带来了函数式编程的恐怖回忆；type参数对于弱类型语言，一个object不足以描述其类型。
 
 ### 6. 使用web页面模拟客户端，用于测试服务器
 
@@ -54,15 +54,15 @@ module.exports改为挂接在window变量上，然后把lib文件夹下其余的
 
 ### 0. 用两个chrome和firefox两个浏览器分别模拟两个客户端
 
-打开浏览器的控制台界面，控制台是主要的信息输出地。分别注册和登录。
+打开浏览器的控制台界面，控制台是主要的信息输出地。首先分别注册和登录游戏账号。
 
 ![登录界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/login.PNG)
 
 ![登录界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/afterlogin.PNG)
 
-### 1. 登录
+### 1. 登录游戏
 
-点击login进行登录，login的主要过程是执行queryEntry和entry两个函数。
+点击login登录游戏，login的主要过程是执行queryEntry和entry两个函数。
 
 queryEntry是connect gate服务器，并发出request，获取connector的ip和port。
 
