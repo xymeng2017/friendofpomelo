@@ -44,6 +44,10 @@ module.exports改为挂接在window变量上，然后把lib文件夹下其余的
 
 打开浏览器的控制台界面，控制台是主要的信息输出地。分别注册和登录。
 
+![登录界面]（https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/login.PNG）
+
+![登录界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/afterlogin.PNG)
+
 ##### 1. 登录
 
 点击login进行登录，login的主要过程是执行queryEntry和entry两个函数。
@@ -54,14 +58,26 @@ entry是connect connector服务器，并发出request，获取player信息。
 
 如果是第一次登录，则返回player未初始化，此时客户端可输入姓名，点击init按钮，创建角色（略）。
 
+![登录游戏界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/afterlogingame.PNG)
+
 ##### 2. 添加好友
 
 输入要添加好友的数字id号，点击add进行添加，则会发送添加好友请求，如果对方在线，会推送通知。
+
+![添加好友界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/add.PNG)
+
+![添加好友推送通知界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/push.PNG)
 
 ##### 3. 同意添加好友
 
 打开另一个浏览器，输入刚才推送的id号，点击agree，则双方成为好友。
 
+![同意添加好友界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/agree.PNG)
+
 ##### 4. 删除好友
 
 输入好友的id号，点击remove，则双方不再是好友，此时如果对方在线，也会推送通知。
+
+![删除好友界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/remove.PNG)
+
+![删除好友推送通知界面](https://github.com/xymeng2017/friendofpomelo/blob/master/readme-resource/push2.PNG)
