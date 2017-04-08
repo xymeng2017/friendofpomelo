@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../common/meta.ejs %>
+    <title>Register</title>
+    <% include ../common/css.ejs %>
+</head>
+<body>
+<% include ../common/header.ejs %>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Register</div>
+                <div class="panel-body">
+                    <form id="register-form" class="form-horizontal" role="form" method="POST" action="/auth/register">
+                        <div id="alert-div"></div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Username</label>
+                            <div class="col-md-6">
+                                <input id="user-input" name="username" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Set Password</label>
+                            <div class="col-md-6">
+                                <input id="pass-input" name="password" type="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">Accept Agreement and Register</button>
+                                <a class="btn btn-link" href="/auth/agreement">User Agreement</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../common/footer.ejs %>
+<% include ../common/js.ejs %>
+<script src="/vendor/jquery-plugins/jquery.form.min.js"></script>
+<script src="/js/auth/register.js"></script>
+</body>
+</html>
+
+
+

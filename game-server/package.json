@@ -1,0 +1,16 @@
+{
+  "name": "sweets-demo-dotaLike",
+  "version": "0.2.0",
+  "private": false,
+  "dependencies": {
+    "async": "^2.1.4",
+    "crc": ">=0.0.1",
+    "generic-pool": "^3.1.6",
+    "mongodb": "^2.2.22",
+    "pomelo": "^2.2.3",
+    "pomelo-collection": ">=0.1.0",
+    "pomelo-globalchannel-plugin": "0.0.7",
+    "pomelo-logger": "0.1.x",
+    "pomelo-status-plugin": "0.0.6"
+  }
+}

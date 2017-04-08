@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include common/meta.ejs %>
+    <title>Overview</title>
+    <% include common/css.ejs %>
+    <link rel='stylesheet' href='/css/home.css'/>
+</head>
+<body>
+<% include common/header.ejs %>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Begin
+            </div>
+            <div class="panel-body">
+                <button id="login-btn">Login</button>
+                <button>Start Matching</button>
+                <button>Back00</button>
+                <button>Back01</button>
+                <button>Back02</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default" id="initPlayer">
+            <div class="panel-heading">
+                Init Player
+            </div>
+            <div class="panel-body">
+                <label>Player Name</label>
+                <input id="initPlayer-input">
+                <button id="initPlayer-btn">Init</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel panel-default" id="friend">
+            <div class="panel-heading">
+                Player Friends
+            </div>
+            <div class="panel-body">
+                <div>
+                    <label>Player Identifier</label>
+                    <input id="searchPlayer-input">
+                    <button id="searchPlayer-btn">Search</button>
+                </div>
+                <div>
+                    <label>Player Identifier</label>
+                    <input id="addPlayer-input">
+                    <button id="addPlayer-btn">Add</button>
+                </div>
+                <div>
+                    <label>Player Identifier</label>
+                    <input id="agreeAddPlayer-input">
+                    <button id="agreeAddPlayer-btn">Agree</button>
+                </div>
+                <div>
+                    <label>Player Identifier</label>
+                    <input id="refuseAddPlayer-input">
+                    <button id="refuseAddPlayer-btn">Refuse</button>
+                </div>
+                <div>
+                    <label>Player Identifier</label>
+                    <input id="removePlayer-input">
+                    <button id="removePlayer-btn">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default" id="createSociety">
+            <div class="panel-heading">
+                Create Society
+            </div>
+            <div class="panel-body">
+                <label>Society Name</label>
+                <input id="createSociety-input">
+                <button id="createSociety-btn">Create</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default" id="societyInfo">
+            <div class="panel-heading">
+                Society Info
+            </div>
+            <div class="panel-body" id="societyInfo-body">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default" id="chat">
+            <div class="panel-heading" id="chat-title">
+                Chat with
+            </div>
+            <div class="panel-body">
+                <input id="chat-input">
+                <button id="chat-btn">Send</button>
+                <div id="chat-output"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Map
+            </div>
+            <div class="panel-body">
+                <div style="height: 802px;">
+                    <canvas id="canvas" width="800" height="800" style="border:1px solid #c3c3c3;">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include common/footer.ejs %>
+<% include common/js.ejs %>
+<script src="/js/lib/EventEmitter.js"></script>
+<script src="/js/lib/protocol.js"></script>
+<script src="/js/lib/pomelo-client.js"></script>
+<script src="/js/lib/protobuf.js"></script>
+
+<script src="/js/home/home.js"></script>
+<script src="/js/const/config.js"></script>
+<script src="/js/const/const.js"></script>
+<script src="/js/const/code.js"></script>
+<script src="/js/home/main.js"></script>
+</body>
+</html>

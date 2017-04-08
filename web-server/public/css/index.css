@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    display: table;
+    font-weight: 100;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+a {
+    font-size: 36px;
+    color: #B0BEC5;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 200px;
+}

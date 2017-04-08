@@ -1,0 +1,17 @@
+{
+  "appenders": [
+    {
+      "type": "file",
+      "filename": "./log/global.log",
+      "fileSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5
+    },
+    {
+      "type": "console"
+    }
+  ],
+  "replaceConsole": true
+}

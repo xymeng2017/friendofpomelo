@@ -1,0 +1,16 @@
+{
+  "development": {
+    "host": "127.0.0.1",
+    "port": "27017",
+    "database": "treasures",
+    "user": "root",
+    "password": "12345"
+  },
+  "production": {
+    "host": "127.0.0.1",
+    "port": "27017",
+    "database": "treasures",
+    "user": "root",
+    "password": "12345"
+  }
+}

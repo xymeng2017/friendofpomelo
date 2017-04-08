@@ -1,0 +1,64 @@
+{
+  "appenders": [{
+    "type": "file",
+    "filename": "./log/node-log-${opts:serverId}.log",
+    "fileSize": 1048576,
+    "layout": {
+      "type": "basic"
+    },
+    "backups": 5
+  }, {
+    "type": "console"
+  }, {
+    "type": "file",
+    "filename": "./log/con-log-${opts:serverId}.log",
+    "pattern": "connector",
+    "fileSize": 1048576,
+    "layout": {
+      "type": "basic"
+    },
+    "backups": 5,
+    "category": "con-log"
+  }, {
+    "type": "file",
+    "filename": "./log/rpc-log-${opts:serverId}.log",
+    "fileSize": 1048576,
+    "layout": {
+      "type": "basic"
+    },
+    "backups": 5,
+    "category": "rpc-log"
+  }, {
+    "type": "file",
+    "filename": "./log/forward-log-${opts:serverId}.log",
+    "fileSize": 1048576,
+    "layout": {
+      "type": "basic"
+    },
+    "backups": 5,
+    "category": "forward-log"
+  }, {
+    "type": "file",
+    "filename": "./log/crash.log",
+    "fileSize": 1048576,
+    "layout": {
+      "type": "basic"
+    },
+    "backups": 5,
+    "category": "crash-log"
+  }],
+
+  "levels": {
+    "pomelo": "INFO",
+    "admin-log": "INFO",
+    "crash-log": "TRACE",
+    "rpc-debug": "DEBUG",
+    "rpc-log": "ERROR",
+    "con-log": "INFO",
+    "forward-log": "ERROR"
+  },
+
+  "replaceConsole": true,
+
+  "lineDebug": true
+}
