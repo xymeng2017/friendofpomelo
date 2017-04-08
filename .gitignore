@@ -1,4 +1,3 @@
 !.gitignore
-.idea/
-*/node_modules/
+/node_modules/
 game-server/log/*
