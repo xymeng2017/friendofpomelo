@@ -27,17 +27,17 @@ pomelo-status-plugin插件会自动存储每个连接的uid和sid，适合向单
 
 ### 1. 使用ES6+开发
 
-能用ES6+的地方均用了ES6+,node原生执行,没有babel/CoffeeScript/TypeScript那些东东。用async/await、Promise、class、let/const、arrow function等ES6+新特性替换了回调、call()、bind()、apply()、util.inherits()等秀操作的函数。但是由于pomelo框架的限制，大部分地方还是要用回调函数。
+能用ES6+的地方均用了ES6+，node原生执行，没有babel/CoffeeScript/TypeScript那些东东。用async/await、Promise、class、let/const、arrow function等ES6+新特性替换了回调、call()、bind()、apply()、util.inherits()等秀操作的函数。但是由于pomelo框架的限制，大部分地方还是要用回调函数。
 
 ### 2. 线程池和mongodb的配合使用
 
-lordofpomelo是线程池和mysql配合使用的例子,这里改为mongodb与线程池配合，给想选择mongodb的提供借鉴，具体在app/dao/mongodb这个文件夹中。
+lordofpomelo是线程池和mysql配合使用的例子，这里改为mongodb与线程池配合，给想选择mongodb的提供借鉴，具体在app/dao/mongodb这个文件夹中。
 
 ### 3. 含mongodb的唯一数字生成函数
 
 主要原理是利用了findOneAndUpdate这个原子操作。具体在app/dao/IdentifierDao这个类中。
 
-### 4. web-server去除了对component.js依赖
+### 4. web-server去除了对已经deprecated的component.js依赖
 
 根据Google的javascript编程规范，禁止使用deprecated的东西。这里删除了web-server中对component.js的依赖，大大精简了代码，并且也能更好的适应webstorm的代码高亮。主要原理是，在treasures/web-server/public/js/lib/components/的4个pomelo官方组件中，将
 module.exports改为挂接在window变量上，然后把lib文件夹下其余的文件都删掉。
