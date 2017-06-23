@@ -25,6 +25,6 @@ module.exports = class Entity {
     constructor(opts) {
         opts = opts || {};
         const objectId = (typeof opts._id === 'string') ? ObjectId(opts._id) : opts._id;
-        this._id = objectId || null;
+        this._id = objectId;
     }
 };
