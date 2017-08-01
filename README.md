@@ -1,7 +1,7 @@
 # friendofpomelo
 
 
-好友系统是游戏的一个经典功能。这个demo包含添加好友/同意添加/拒绝添加/删除好友以及推送通知功能，适合给pomelo刚入门的人提供借鉴。该demo是在treasures的基础上开发的。
+好友系统是游戏的一个经典功能。这个demo包含添加好友/同意添加/拒绝添加/删除好友以及推送通知功能，适合给刚入门pomelo的人提供借鉴。该demo是在treasures的基础上开发的。**不提供维护，建议随便看看。**
 
 
  * Homepage: <http://pomelo.netease.com/>
